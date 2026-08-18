@@ -1,0 +1,42 @@
+
+               SOLUCIÓN Y RESPUESTA AL EJERCICIO 1
+
+
+PREGUNTA:
+¿Aceptará la calculadora una línea que contenga solo un comentario? 
+¿Por qué no? ¿Sería más fácil arreglar esto en el escáner o en el parser?
+
+--------------------------------------------------------------------
+RESPUESTAS DIRECTAS:
+--------------------------------------------------------------------
+
+1. ¿Acepta solo un comentario?
+   NO. La calculadora original falla y muestra un error de sintaxis 
+   ("syntax error").
+
+2. ¿Por qué no?
+   Porque cuando escribes un comentario (ej. "// mi comentario") y 
+   presionas Enter, Flex ignora el comentario y solo le envía a Bison 
+   el salto de línea (token EOL). 
+
+   La gramática original en Bison exige que antes de cada EOL exista 
+   una expresión matemática (calclist exp EOL). Al no encontrar ninguna 
+   expresión previa, Bison detecta una sintaxis inválida.
+
+3. ¿Dónde es más fácil arreglarlo?
+   Es más fácil arreglarlo en el PARSER (Bison).
+
+--------------------------------------------------------------------
+CÓMO SE ARREGLÓ EN EL CÓDIGO(Se implementaron estos cambios en el ejercicio 2):
+--------------------------------------------------------------------
+
+- En Flex (fb1-5.l): 
+  Se agregó la regla "//".* para que el escáner reconozca y remueva 
+  los comentarios de la entrada.
+
+- En Bison (fb1-5.y): 
+  Se agregó la regla "| calclist EOL", permitiendo que el programa 
+  reciba un Enter aislado (generado por una línea vacía o por un 
+  comentario) y simplemente no haga nada, evitando que el programa 
+  se caiga.
+
