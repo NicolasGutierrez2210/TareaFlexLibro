@@ -1,4 +1,4 @@
-# Proyecto Flex y Bison - Ejercicios del Libro
+# Tarea Flex y Bison - Ejercicios del Libro
 
 Repositorio para la resolución de los ejercicios del Capítulo 1 (Flex & Bison).
 
