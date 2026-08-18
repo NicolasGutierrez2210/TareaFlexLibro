@@ -54,3 +54,32 @@ Se ajustó la forma en la que la calculadora imprime el resultado final tras rea
 - En la regla principal de `calclist`, se modificó el `printf`:
   ```yacc
   printf("= %d (0x%X)\n> ", $2, $2);
+   ```
+
+---
+
+## COMPILACIÓN Y CASOS DE PRUEBA
+
+### Comandos de Compilación y Ejecución:
+
+Para compilar el analizador léxico (Flex) y el analizador sintáctico (Bison) y ejecutar la calculadora en la consola de Linux:
+
+```bash
+bison -d calc_hex.y
+flex calc_hex.l
+gcc -o calc_hex calc_hex.tab.c lex.yy.c
+./calc_hex
+```
+| Entrada Ingresada | Salida Esperada | Explicación Técnica |
+| :--- | :--- | :--- |
+| `0x10 + 5` | `= 21 (0x15)` | Suma entre un entero hexadecimal (`0x10` = 16) y un decimal (5). Se muestra la suma en base 10 (21) y en base 16 (`0x15`). |
+| `0x0A * 0x02` | `= 20 (0x14)` | Multiplicación entre números hexadecimales (`0x0A` = 10 y `0x02` = 2). El resultado calculado es 20 (`0x14`). |
+| `// esto es un comentario` | `> ` | Evaluación del **Ejercicio 1**. Flex detecta e ignora el comentario, y Bison procesa el salto de línea (`EOL`) sin arrojar `syntax error`. |
+| `0x10 / 0` | `Error: Division por cero` | Control de excepciones en Bison al detectar división entre cero para impedir el colapso de la aplicación (*core dumped*). |
+| `| 0 - 5 |` | `= 5 (0x5)` | Aplicación del operador unario de valor absoluto sobre una expresión matemática con resultado negativo. |
+
+
+
+
+
+  
