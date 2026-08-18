@@ -1,6 +1,6 @@
 # Proyecto Flex y Bison - Ejercicios del Libro
 
-Repositorio colaborativo para la resolución de los ejercicios del Capítulo 1 (Flex & Bison).
+Repositorio para la resolución de los ejercicios del Capítulo 1 (Flex & Bison).
 
 ##  Organización de carpetas
 - `ejercicios_1_y_2/`: Manejo de comentarios en parser y números hexadecimales.
