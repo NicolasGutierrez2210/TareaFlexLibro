@@ -44,7 +44,7 @@ Convertir la calculadora en una calculadora hexadecimal que acepte números tant
 ### Interpretación Técnica y Solución Implementada:
 
 #### 1. Modificación en el Escáner (Flex)
-Le enseñamos a la calculadora a reconocer números en base 16 y a traducirlos internamente a base 10 para que Bison pueda operar con ellos sin darse cuenta del cambio:
+Sele enseña a la calculadora a reconocer números en base 16 y a traducirlos internamente a base 10 para que Bison pueda operar con ellos sin darse cuenta del cambio:
 - Se añadió la expresión regular `"0x"[a-fA-F0-9]+` para detectar el formato hexadecimal (con soporte para letras mayúsculas y minúsculas).
 - Se usó la función estándar de C `strtol(yytext, NULL, 0)`. Esta función toma el texto (ej. `0x1A`), reconoce automáticamente que está en base 16 por el prefijo `0x`, y lo convierte a un valor entero nativo.
 - Este valor entero convertido se almacena en `yylval` y se retorna el token `NUMBER` hacia Bison.
