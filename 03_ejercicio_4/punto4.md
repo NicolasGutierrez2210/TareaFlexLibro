@@ -26,11 +26,11 @@ Por ejemplo, si se introduce:
 
 el scanner identifica:
 
-`
+```
 34  → NUMBER
 +   → ADD
 45  → NUMBER
-`
+```
 
 ### 2. Tokens de la versión escrita a mano
 
