@@ -58,15 +58,15 @@ En Flex:
 ![Descripción de la imagen](imgenes/div.png)
 
 
-Es decir, cuando encuentra `/`, devuelve directamente el token `DIV`.
+Es decir, cuando encuentra /, devuelve directamente el token DIV.
 
 
-En la versión escrita a mano, primero comprueba si después de `/` aparece otro `/`:
+En la versión escrita a mano, primero comprueba si después de / aparece otro /:
 
 ![Descripción de la imagen](imgenes/comentario.png)
 
 
-Por eso `//` se trata como un comentario. Si solamente aparece `/`, entonces devuelve `DIV`.
+Por eso // se trata como un comentario. Si solamente aparece /, entonces devuelve DIV.
 
 ## Demostración
 
@@ -74,13 +74,13 @@ Podemos comparar algunos ejemplos:
 
 | Entrada | Flex (Ejemplo 1-4) | Handwritten |
 |---|---|---|
-| `+` | `ADD` | `ADD` |
-| `34` | `NUMBER` | `NUMBER` |
-| `*` | `MUL` | `MUL` |
-| `/` | `DIV` | `DIV` |
-| `(` | No tiene regla | `OP` |
-| `)` | No tiene regla | `CP` |
-| `// comentario` | `/` se reconoce como `DIV` y el segundo `/` también se procesa | Se reconoce como comentario |
+| + | ADD | ADD |
+| 34 | NUMBER | NUMBER |
+| * | MUL | MUL |
+| / | DIV | DIV |
+| ( | No tiene regla | OP |
+| ) | No tiene regla | CP |
+| // comentario | / se reconoce como DIV y el segundo / también se procesa | Se reconoce como comentario |
 
 Esto demuestra que no son exactamente iguales.
 
