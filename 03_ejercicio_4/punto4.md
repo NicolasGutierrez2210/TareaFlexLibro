@@ -2,9 +2,8 @@
 
 ¿La versión escrita a mano del scanner del Ejemplo 1-4 reconoce exactamente los mismos tokens que la versión de Flex?
 
-## Respuesta
 
-**No.** La versión escrita a mano no reconoce exactamente los mismos tokens ni tiene exactamente el mismo comportamiento que la versión de Flex.
+**R//** No. La versión escrita a mano no reconoce exactamente los mismos tokens ni tiene exactamente el mismo comportamiento que la versión de Flex.
 
 ## ¿Por qué?
 
