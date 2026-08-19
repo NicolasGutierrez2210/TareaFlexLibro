@@ -1,4 +1,4 @@
-# Ejercicio 3 - Capítulo 1 (Flex & Bison)
+# Ejercicio 3
 
 ## Enunciado
 
@@ -9,8 +9,7 @@
 
 ## Solución
 
-Se parte de la calculadora final del capítulo 1 (`fb1-5`, la que ya soporta
-paréntesis y comentarios) y se le agregan dos operadores:
+Se parte de la calculadora final y se le agregan dos operadores:
 
 - **AND** (`&`): token nuevo, sin conflicto con nada existente.
 - **OR** (`|`): se reutiliza el mismo carácter que ya usaba `ABS` (valor
