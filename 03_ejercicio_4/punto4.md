@@ -1,8 +1,6 @@
-# Ejercicio 4.4 — Scanner escrito a mano vs. Flex
+# Ejercicio 4— Scanner escrito a mano vs. Flex
 
-## Enunciado
-
-**¿La versión escrita a mano del scanner del Ejemplo 1-4 reconoce exactamente los mismos tokens que la versión de Flex?**
+¿La versión escrita a mano del scanner del Ejemplo 1-4 reconoce exactamente los mismos tokens que la versión de Flex?
 
 ## Respuesta
 
