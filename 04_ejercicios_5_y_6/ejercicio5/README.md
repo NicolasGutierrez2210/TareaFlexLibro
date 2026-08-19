@@ -1,11 +1,11 @@
 # Ejercicio 5: Lenguajes donde Flex no es una buena opcion para escribir un escaner
 
-## Planteamiento
+## Ejercicio
 La pregunta nos plantea analizar para que tipos de lenguajes de programacion la herramienta Flex no resultaria adecuada o conveniente al momento de construir su analizador lexico (escaner).
 
 ---
 
-## Analisis y Explicacion
+## Analisis y explicacion
 
 Flex funciona convirtiendo expresiones regulares en automatas finitos deterministas (DFA). Este modelo es rapido y eficiente para lenguajes donde cada token se reconoce observando unicamente el patron actual y a lo sumo unos pocos caracteres de contexto inmediato. 
 
@@ -44,7 +44,7 @@ En C++, el significado de una secuencia de caracteres puede cambiar radicalmente
 
 ---
 
-### 4. Lenguajes con interpolacion compleja de expresiones en cadenas (Ruby, Perl, Bash)
+### 4. Lenguajes que incluyen variables dentro de un texto (interpolacion de expresiones en cadena) (Ruby, Perl, Bash)
 Muchos lenguajes permiten incrustar expresiones de codigo completas dentro de un texto entre comillas, como:
 `"El resultado total es: #{calcular_total(base, factor) + 10}"`
 
