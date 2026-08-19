@@ -1,5 +1,7 @@
 # Tarea Flex y Bison - Ejercicios del Libro
 
+Ángel Arcos, Yeimy Beltrán, Nicolás Gutierrez y Samuel Lagos Prado
+
 Repositorio para la resolución de los ejercicios del Capítulo 1 (Flex & Bison).
 
 ##  Organización de carpetas
