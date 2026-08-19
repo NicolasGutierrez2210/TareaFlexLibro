@@ -12,6 +12,7 @@ Para comprobarlo, se pueden comparar directamente las reglas de los dos scanners
 ### 1. Tokens que reconoce la versión de Flex
 
 En el Ejemplo 1-4 aparecen estas reglas:
+![Descripción de la imagen](imagenes/imagen1.png)
 
 | Entrada | Token |
 |---|---|
@@ -41,6 +42,8 @@ el scanner identifica:
 
 En la versión handwritten aparecen también:
 
+![Descripción de la imagen](imagenes/imagen2.png)
+
 ```c
 case '(': return OP;
 case ')': return CP;
@@ -61,6 +64,8 @@ También hay una diferencia en el tratamiento de `/`.
 
 En Flex:
 
+![Descripción de la imagen](imagenes/div.png)
+
 ```text
 "/" → DIV
 ```
@@ -69,6 +74,7 @@ Es decir, cuando encuentra `/`, devuelve directamente el token `DIV`.
 
 En la versión escrita a mano, primero comprueba si después de `/` aparece otro `/`:
 
+![Descripción de la imagen](imagenes/comentario.png)
 ```text
 / / → comentario
 ```
