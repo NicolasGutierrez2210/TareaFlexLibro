@@ -21,7 +21,7 @@ En lenguajes como Python, los bloques de codigo no se delimitan con llaves `{ }`
 
 ---
 
-### 2. Fortran clasico (Fortran 77 y anteriores)
+### 2. Fortran (Fortran 77 y anteriores)
 El diseno de Fortran clasico tiene dos caracteristicas muy particulares: no tiene palabras reservadas y el compilador ignora completamente todos los espacios en blanco, incluso dentro de nombres y palabras clave.
 
 * **El problema para Flex:** Consideremos estas dos lineas casi identicas:
