@@ -41,16 +41,16 @@ En la versión handwritten aparecen también:
 
 Por lo tanto:
 
-```text
+
 ( → OP
 ) → CP
-```
+
 
 Estos tokens no aparecen en las reglas del scanner de Flex del Ejemplo 1-4.
 
 ### 3. Diferencia con `/`
 
-También hay una diferencia en el tratamiento de `/`.
+También hay una diferencia en el tratamiento de /.
 
 En Flex:
 
