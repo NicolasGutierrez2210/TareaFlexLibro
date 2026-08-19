@@ -26,6 +26,8 @@ En el Ejemplo 1-4 aparecen estas reglas:
 
 Por ejemplo, si se introduce:
 
+![Descripción de la imagen](imgenes/ej1.png)
+
 ```text
 34 + 45
 ```
