@@ -43,6 +43,7 @@ Por lo tanto:
 
 
 ( → OP
+
 ) → CP
 
 
